@@ -1,0 +1,42 @@
+/* Estilo global para la raíz de la escena */
+.root {
+    -fx-background-color: #f5f5f5; /* Fondo gris claro */
+}
+
+/* Estilo general para los botones */
+.button {
+    -fx-background-color: #4CAF50; /* Fondo verde */
+    -fx-text-fill: white;          /* Texto blanco */
+    -fx-font-size: 12px;           /* Tamaño de fuente */
+    -fx-padding: 0;                /* Sin padding adicional */
+    -fx-background-radius: 5;      /* Bordes redondeados */
+    -fx-cursor: hand;              /* Cursor tipo mano */
+    -fx-text-overrun: CLIP;        /* Recorta el texto si no cabe, sin puntos suspensivos */
+    -fx-wrap-text: true;           /* Permite el salto de línea si es necesario */
+    -fx-alignment: CENTER;         /* Centra el contenido en el botón */
+    -fx-pref-width: 40px;          /* Ancho preferido */
+    -fx-pref-height: 35px;         /* Alto preferido */
+}
+
+/* Estilo para el hover de los botones:
+   Al pasar el ratón, el fondo se oscurece ligeramente para dar retroalimentación visual */
+.button:hover {
+    -fx-background-color: #45A049; /* Verde ligeramente más oscuro */
+}
+
+/* Estilo para el display de resultados */
+#f_resultado {
+    -fx-font-size: 24px;           /* Fuente grande para los resultados */
+    -fx-text-fill: #333333;        /* Texto en gris oscuro */
+    -fx-border-color: #cccccc;     /* Borde gris claro */
+    -fx-border-width: 1px;         /* Grosor del borde */
+    -fx-background-color: white;   /* Fondo blanco */
+    -fx-padding: 10px;             /* Espacio interno */
+}
+
+/* Estilo para el historial */
+#label_historial {
+    -fx-font-size: 16px;           /* Fuente un poco más pequeña para el historial */
+    -fx-text-fill: #666666;        /* Texto en gris medio */
+    -fx-padding: 5px;              /* Espacio interno */
+}

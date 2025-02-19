@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="509.0" prefWidth="299.0" spacing="20.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calculadora.Calculadora">
+
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+   <Pane prefHeight="364.0" prefWidth="259.0">
+      <children>
+         <!-- Reemplazo del Label -->
+         <Label fx:id="f_resultado" alignment="CENTER_RIGHT" layoutX="11.0" layoutY="61.0" prefHeight="53.0" prefWidth="237.0" textAlignment="RIGHT">
+            <font>
+               <Font size="36.0" />
+            </font>
+         </Label>
+         <HBox layoutX="11.0" layoutY="131.0" prefHeight="225.0" prefWidth="237.0" spacing="10.0">
+            <children>
+               <VBox prefHeight="227.0" prefWidth="38.0" spacing="10.0">
+                  <children>
+                     <Button fx:id="b_borrarToda" lineSpacing="10.0" mnemonicParsing="false" onAction="#onClickBorrarTodo" prefHeight="35.0" prefWidth="38.0" text="CA" />
+                     <Button fx:id="b_7" mnemonicParsing="false" onAction="#onClickNumero" prefHeight="35.0" prefWidth="38.0" text="7" />
+                     <Button fx:id="b_4" mnemonicParsing="false" onAction="#onClickNumero" prefHeight="35.0" prefWidth="38.0" text="4" />
+                     <Button fx:id="b_1" mnemonicParsing="false" onAction="#onClickNumero" prefHeight="35.0" prefWidth="38.0" text="1" />
+                     <Button fx:id="b_parentesis" mnemonicParsing="false" onAction="#onClickParentesis" prefHeight="35.0" prefWidth="38.0" text="()" />
+                  </children>
+               </VBox>
+               <VBox prefHeight="227.0" prefWidth="38.0" spacing="10.0">
+                  <children>
+                     <Button fx:id="b_borrarNormal" mnemonicParsing="false" onAction="#onClickBorrar" prefHeight="35.0" prefWidth="38.0" text="C" />
+                     <Button fx:id="b_8" mnemonicParsing="false" onAction="#onClickNumero" prefHeight="35.0" prefWidth="38.0" text="8" />
+                     <Button fx:id="b_5" mnemonicParsing="false" onAction="#onClickNumero" prefHeight="35.0" prefWidth="38.0" text="5" />
+                     <Button fx:id="b_2" mnemonicParsing="false" onAction="#onClickNumero" prefHeight="35.0" prefWidth="38.0" text="2" />
+                     <Button fx:id="b_05" mnemonicParsing="false" onAction="#onClickNumero" prefHeight="35.0" prefWidth="38.0" text="0" />
+                  </children>
+               </VBox>
+               <VBox prefHeight="227.0" prefWidth="39.0" spacing="10.0">
+                  <children>
+                     <Button fx:id="b_porcentaje" mnemonicParsing="false" onAction="#onClickOperacion" prefHeight="35.0" prefWidth="38.0" text="\%" />
+                     <Button fx:id="b_9" mnemonicParsing="false" onAction="#onClickNumero" prefHeight="35.0" prefWidth="38.0" text="9" />
+                     <Button fx:id="b_6" mnemonicParsing="false" onAction="#onClickNumero" prefHeight="35.0" prefWidth="38.0" text="6" />
+                     <Button fx:id="b_3" lineSpacing="10.0" mnemonicParsing="false" onAction="#onClickNumero" prefHeight="35.0" prefWidth="38.0" text="3" />
+                     <Button fx:id="b_punto" mnemonicParsing="false" onAction="#onClickDecimal" prefHeight="35.0" prefWidth="38.0" text="." />
+                  </children>
+               </VBox>
+               <VBox prefHeight="227.0" prefWidth="38.0" spacing="10.0">
+                  <children>
+                     <Button fx:id="b_dividir" mnemonicParsing="false" onAction="#onClickOperacion" prefHeight="35.0" prefWidth="38.0" text="/" />
+                     <Button fx:id="b_por" mnemonicParsing="false" onAction="#onClickOperacion" prefHeight="35.0" prefWidth="38.0" text="X" />
+                     <Button fx:id="b_menos" mnemonicParsing="false" onAction="#onClickOperacion" prefHeight="35.0" prefWidth="38.0" text="-" />
+                     <Button fx:id="b_mas" mnemonicParsing="false" onAction="#onClickOperacion" prefHeight="35.0" prefWidth="38.0" text="+" />
+                     <Button fx:id="bCalcular" onAction="#onClickCalcular" prefHeight="35.0" prefWidth="38.0" text="=" />
+                  </children>
+               </VBox>
+               <VBox prefHeight="225.0" prefWidth="43.0" spacing="10.0">
+                  <children>
+                     <Button fx:id="sacarMemoriaButon" mnemonicParsing="false" onAction="#cogerMemoria" prefHeight="35.0" prefWidth="38.0" text="M+" />
+                     <Button fx:id="memoriaCero" mnemonicParsing="false" onAction="#resetMemoria" prefHeight="35.0" prefWidth="38.0" text="MC" />
+                     <Button fx:id="recuMemoria" mnemonicParsing="false" onAction="#recuperarMemoria" prefHeight="35.0" prefWidth="38.0" text="MR" />
+                     <Button fx:id="masMenos" mnemonicParsing="false" onAction="#cambiarSigno" prefHeight="35.0" prefWidth="38.0" text="+/-" />
+                  </children>
+               </VBox>
+            </children>
+         </HBox>
+         <Label fx:id="label_historial" alignment="CENTER_RIGHT" layoutX="11.0" layoutY="22.0" prefHeight="17.0" prefWidth="237.0" text="Historial" textAlignment="RIGHT" />
+      </children>
+   </Pane>
+</VBox>
